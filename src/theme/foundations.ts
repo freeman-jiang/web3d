@@ -16,8 +16,4 @@ export const foundations = {
       "900": "#231410",
     },
   },
-  fonts: {
-    heading: `GeneralSans-Variable, ${base.fonts.heading}`,
-    body: `GeneralSans-Variable, ${base.fonts.body}`,
-  },
 };
