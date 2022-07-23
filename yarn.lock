@@ -4285,3 +4285,8 @@ yn@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
+
+zokrates-js@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/zokrates-js/-/zokrates-js-1.1.1.tgz#20c9a1941ebd3d268d4731846b68a7ea0d0482d2"
+  integrity sha512-KfL9tLqTFU/KzbbOFGquE95G9FWBIGCnlQer7hSou6fTlo25Hej7QR2RHJmYD7qhr+8LLJ1JPr6+3bPZgApPfQ==
