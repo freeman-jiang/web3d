@@ -1,0 +1,49 @@
+{
+  "name": "chakra-next-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen:theme-typings": "chakra-cli tokens src/theme",
+    "postinstall": "yarn gen:theme-typings",
+    "type:check": "yarn tsc --noEmit",
+    "format:check": "yarn prettier . --ignore-path .gitignore --check",
+    "format:fix": "yarn prettier . --ignore-path .gitignore --write",
+    "validate": "run-p lint type:check format:check",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "dotenv-safe": "^8.2.0",
+    "framer-motion": "^6",
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "yarn-run-all": "^3.1.1"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^1.9.0",
+    "@types/dotenv-safe": "^8.1.2",
+    "@types/node": "17.0.25",
+    "@types/react": "18.0.6",
+    "@types/react-dom": "18.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.13.0",
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
