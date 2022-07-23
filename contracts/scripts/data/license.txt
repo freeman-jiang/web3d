@@ -1,0 +1,11 @@
+Model Information:
+* title:	blockout of Arc de Triomphe
+* source:	https://sketchfab.com/3d-models/blockout-of-arc-de-triomphe-ffc7efeae05c42d0ac16b34ae3a5cd28
+* author:	zacharyfrs (https://sketchfab.com/zacharyfrs)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "blockout of Arc de Triomphe" (https://sketchfab.com/3d-models/blockout-of-arc-de-triomphe-ffc7efeae05c42d0ac16b34ae3a5cd28) by zacharyfrs (https://sketchfab.com/zacharyfrs) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
