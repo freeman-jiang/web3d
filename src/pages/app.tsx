@@ -236,6 +236,28 @@ export default function Home() {
       >
         Download File
       </Button>
+      <Button
+        mt="3"
+        onClick={async () => {
+          const [latitude, longitude, size] = await client.get(userAddress, [
+            "latitude",
+            "longitude",
+            "size",
+          ]);
+          if (!latitude || !longitude || !size) {
+            toast({ status: "warning", title: "No scan info uploaded." });
+          }
+
+          toast({
+            status: "success",
+            title: "Info",
+            description: `Longitude: ${longitude?.text()}. Latitude: ${latitude?.text()}. Size: ${size?.text()}`,
+            position: "top",
+          });
+        }}
+      >
+        Get Scan Info
+      </Button>
     </Flex>
   );
 }
