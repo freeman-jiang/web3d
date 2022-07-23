@@ -100,14 +100,19 @@ export default function Home() {
     longitude,
     size,
   }) => {
-    const res = await Promise.all([
-      client.putFile(userAddress, "file", file),
-      client.put(userAddress, [
-        { field: "longitude", value: longitude },
-        { field: "latitude", value: latitude },
-        { field: "size", value: size },
-      ]),
-    ]);
+    try {
+      const res = await Promise.all([
+        client.putFile(userAddress, "file", file),
+        client.put(userAddress, [
+          { field: "longitude", value: longitude },
+          { field: "latitude", value: latitude },
+          { field: "size", value: size },
+        ]),
+      ]);
+      toast({ title: "Successfully updated information", status: "success" });
+    } catch (err) {
+      toast({ title: "Something went wrong", status: "error" });
+    }
   };
 
   return (
