@@ -1,76 +1,49 @@
+import { CNLink } from "@/components/utility";
 import {
   Button,
-  Code,
   Flex,
   Heading,
-  HStack,
+  Image,
   Stack,
   Text,
-  useColorMode,
-  VStack,
+  useBreakpointValue,
 } from "@chakra-ui/react";
-import type { NextPage } from "next";
-import { CNImage, CNLink } from "@/components/utility";
-import Example from "@/images/example.png";
 
-const Home: NextPage = () => {
-  const { toggleColorMode } = useColorMode();
+export default function Home() {
   return (
-    <Flex
-      direction="column"
-      minW="100vw"
-      minH="100vh"
-      bg="whiteAlpha"
-      justifyContent={"center"}
-      alignItems={"center"}
-      gap="1.5rem"
-      px="2rem"
-    >
-      <CNLink
-        href="https://github.com/freeman-jiang/chakra-next-template"
-        target={"_blank"}
-      >
-        <Button pos="fixed" top="1rem" right="1rem" colorScheme={"redwood"}>
-          Use this template
-        </Button>
-      </CNLink>
-      <VStack textAlign={"center"}>
-        <Heading fontWeight={500} fontSize="2.75rem">
-          chakra-next-template
-        </Heading>
-        <Text maxW={"30rem"} fontSize="1.1rem">
-          The easiest way to start building a scalable project with TypeScript,
-          Next.js, & Chakra UI!
-        </Text>
-      </VStack>
-      <Stack
-        gap={{ base: 0, md: 2 }}
-        alignItems={"center"}
-        direction={{ base: "column", md: "row" }}
-      >
-        <Button
-          colorScheme={"redwood"}
-          aria-label="Toggle color mode"
-          onClick={toggleColorMode}
-        >
-          Toggle color mode
-        </Button>
-        <Button variant={"custom"} shadow={"custom"}>
-          {"I'm a custom variant!"}
-        </Button>
-        <CNLink fontWeight={300} href="/nowhere" as="button">
-          {"I'm a Chakra + Next Link!"}
-        </CNLink>
-      </Stack>
-
-      <HStack spacing={4}>
-        <CNImage w="4rem" src={Example} />
-        <Text>
-          I{"'"}m a Next.js optimized image that takes <Code>BoxProps</Code>
-        </Text>
-      </HStack>
-    </Flex>
+    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
+      <Flex p={8} flex={1} align={"center"} justify={"center"}>
+        <Flex direction="column" w={"full"} maxW={"lg"}>
+          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+            <Text color={"blue.400"} as={"span"} position={"relative"}>
+              Web3D
+            </Text>
+            <Text fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
+              Decentralized 3D Maps
+            </Text>
+          </Heading>
+          <Text mt="2" fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+            ETHCC 2022
+          </Text>
+          <Stack mt="6" direction={{ base: "column", md: "row" }} spacing={4}>
+            <CNLink href="/app">
+              <Button rounded="full" colorScheme="blue">
+                Launch App
+              </Button>
+            </CNLink>
+            <Button rounded={"full"}>How It Works</Button>
+          </Stack>
+        </Flex>
+      </Flex>
+      <Flex flex={1}>
+        <Image
+          alt={"Login Image"}
+          objectFit={"cover"}
+          src={
+            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        />
+      </Flex>
+    </Stack>
   );
-};
-
-export default Home;
+}

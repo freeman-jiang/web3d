@@ -21,7 +21,9 @@
       "@/theme/*": ["src/theme/*"],
       "@/services/*": ["src/services/*"],
       "@/utils/*": ["src/utils/*"],
-      "@/images/*": ["public/static/images/*"]
+      "@/images/*": ["public/static/images/*"],
+      "@/privy/*": ["src/privy/*"],
+      "@/context/*": ["src/context/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

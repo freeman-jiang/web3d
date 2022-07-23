@@ -19,11 +19,17 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@metamask/providers": "^9.0.0",
+    "@privy-io/privy-browser": "^0.0.2",
+    "axios": "^0.27.2",
     "dotenv-safe": "^8.2.0",
     "framer-motion": "^6",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-dropzone": "^14.2.2",
+    "react-hook-form": "^7.33.1",
+    "react-icons": "^4.4.0",
     "yarn-run-all": "^3.1.1"
   },
   "devDependencies": {
